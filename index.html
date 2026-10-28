@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oh Qué Bueno · Panificadora en Amarilis, Huánuco</title>
+  <meta name="description" content="Empresa Panificadora Oh Qué Bueno E.I.R.L. Elaboración de productos de panadería en Paucarbambilla, Amarilis, Huánuco.">
+  <meta name="theme-color" content="#2A160F">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      crust: '#2A160F', wheat: '#F5B83D', flour: '#F7F4EF', berry: '#B3304F', toast: '#6B3E26'
+    } } } };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-flour text-crust antialiased">
+
+<!-- ============ CABECERA ============ -->
+<header id="header" class="fixed inset-x-0 top-0 z-50 text-flour">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#inicio" class="font-display text-xl font-extrabold tracking-tight">Oh Qué Bueno</a>
+    <nav class="hidden items-center gap-7 text-sm font-medium md:flex" aria-label="Principal">
+      <a class="hover:text-wheat" href="#nosotros">Nosotros</a>
+      <a class="hover:text-wheat" href="#mision">Misión y visión</a>
+      <a class="hover:text-wheat" href="#productos">Productos</a>
+      <a class="hover:text-wheat" href="#galeria">Galería</a>
+      <a class="hover:text-wheat" href="#ubicacion">Ubicación</a>
+      <a class="hover:text-wheat" href="#contacto">Contacto</a>
+      <a data-viveic href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-berry px-4 py-2 font-semibold text-flour hover:bg-flour hover:text-berry">VIVE IC <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      <a data-repo href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-wheat px-4 py-2 font-semibold text-crust hover:bg-flour">
+        <svg class="h-4 w-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        Repositorio
+      </a>
+    </nav>
+    <button id="menuBtn" class="md:hidden rounded-lg p-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden bg-crust px-5 pb-5 md:hidden">
+    <div class="flex flex-col gap-1 text-lg font-medium">
+      <a class="py-2" href="#nosotros">Nosotros</a>
+      <a class="py-2" href="#mision">Misión y visión</a>
+      <a class="py-2" href="#productos">Productos</a>
+      <a class="py-2" href="#galeria">Galería</a>
+      <a class="py-2" href="#ubicacion">Ubicación</a>
+      <a class="py-2" href="#contacto">Contacto</a>
+      <a data-viveic href="#" target="_blank" rel="noopener" class="mt-2 rounded-full bg-berry px-4 py-3 text-center font-semibold text-flour">VIVE IC</a>
+      <a data-repo href="#" target="_blank" rel="noopener" class="mt-1 rounded-full bg-wheat px-4 py-3 text-center font-semibold text-crust">Repositorio</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="inicio" class="relative overflow-hidden bg-crust text-flour">
+  <div class="mx-auto grid max-w-6xl items-center gap-8 px-5 pb-20 pt-32 md:grid-cols-2 md:pb-28 md:pt-40">
+    <div>
+      <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-1 text-sm text-wheat">
+        <span class="h-2 w-2 rounded-full bg-wheat"></span> Paucarbambilla, Amarilis · Huánuco
+      </p>
+      <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
+        Pan recién horneado,<br>hecho para tu mesa.
+      </h1>
+      <p class="mt-6 max-w-md text-lg text-flour/75">
+        Somos la Empresa Panificadora Oh Qué Bueno. Elaboramos pan y productos de panadería todos los días en Huánuco.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a data-wa href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-wheat px-6 py-3 font-semibold text-crust hover:bg-flour">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.300 7.400L3 20.500l1.700-5.500A8.500 8.500 0 1 1 21 11.500z"/></svg>
+          Hacer un pedido
+        </a>
+        <a href="#ubicacion" class="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 font-semibold hover:bg-white/10">Cómo llegar</a>
+      </div>
+    </div>
+
+    <!-- Pan ilustrado con vapor -->
+    <div class="relative mx-auto aspect-square w-full max-w-md" aria-hidden="true">
+      <div class="oven-glow absolute inset-0"></div>
+      <svg viewBox="0 0 400 400" class="relative h-full w-full">
+        <g fill="none" stroke="#F7F4EF" stroke-width="5" stroke-linecap="round">
+          <path class="steam" d="M150 130c-14-22 14-34 0-58"/>
+          <path class="steam s2" d="M200 120c-14-22 14-34 0-62"/>
+          <path class="steam s3" d="M250 130c-14-22 14-34 0-58"/>
+        </g>
+        <g class="loaf">
+          <ellipse cx="200" cy="318" rx="130" ry="16" fill="#000" opacity=".25"/>
+          <path d="M60 250c0-70 60-110 140-110s140 40 140 110c0 40-40 62-140 62S60 290 60 250z" fill="#C98532"/>
+          <path d="M72 238c8-58 66-92 128-92s120 34 128 92c-30-24-76-34-128-34s-98 10-128 34z" fill="#E3A649"/>
+          <g fill="none" stroke="#F7D9A0" stroke-width="9" stroke-linecap="round">
+            <path d="M130 196c14 14 20 34 18 56"/>
+            <path d="M190 186c14 16 20 40 18 66"/>
+            <path d="M250 196c14 14 20 34 18 56"/>
+          </g>
+          <path d="M60 250c0 40 40 62 140 62s140-22 140-62c-30 22-80 30-140 30S90 272 60 250z" fill="#A86A22"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Cinta -->
+  <div class="overflow-hidden border-t border-white/10 bg-wheat py-3 text-crust" aria-hidden="true">
+    <div class="marquee font-display text-lg font-bold">
+      <span class="whitespace-nowrap px-4">Pan fresco todos los días ✦ Elaboración artesanal ✦ Amarilis, Huánuco ✦ Factura y boleta electrónica ✦ Pan fresco todos los días ✦ Elaboración artesanal ✦ Amarilis, Huánuco ✦ Factura y boleta electrónica ✦</span>
+      <span class="whitespace-nowrap px-4">Pan fresco todos los días ✦ Elaboración artesanal ✦ Amarilis, Huánuco ✦ Factura y boleta electrónica ✦ Pan fresco todos los días ✦ Elaboración artesanal ✦ Amarilis, Huánuco ✦ Factura y boleta electrónica ✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section id="nosotros" class="mx-auto max-w-6xl px-5 py-20 md:py-28">
+  <div class="grid gap-12 md:grid-cols-5">
+    <div class="md:col-span-2">
+      <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">Quiénes somos</h2>
+      <p class="mt-5 text-lg leading-relaxed text-crust/80">
+        Oh Qué Bueno es una empresa panificadora de Huánuco, constituida como Empresa Individual de Responsabilidad Limitada. Iniciamos actividades el 3 de agosto de 2023 con una idea simple: que el buen pan llegue fresco a las familias de Amarilis.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-crust/80">
+        Desde octubre de 2024 emitimos facturas y boletas electrónicas, para que comprar con nosotros sea fácil y formal.
+      </p>
+    </div>
+
+    <!-- Ficha de la empresa -->
+    <div class="reveal md:col-span-3">
+      <dl class="divide-y divide-crust/10 rounded-3xl bg-white p-2 shadow-sm ring-1 ring-crust/10">
+        <div class="grid gap-1 px-5 py-4 sm:grid-cols-3"><dt class="flex items-center gap-2 font-semibold text-toast">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6"/></svg>Razón social</dt>
+          <dd class="sm:col-span-2">Empresa Panificadora Oh Qué Bueno E.I.R.L.</dd></div>
+        <div class="grid gap-1 px-5 py-4 sm:grid-cols-3"><dt class="flex items-center gap-2 font-semibold text-toast">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg>RUC</dt>
+          <dd class="sm:col-span-2">20489689708</dd></div>
+        <div class="grid gap-1 px-5 py-4 sm:grid-cols-3"><dt class="flex items-center gap-2 font-semibold text-toast">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3c3 4 6 6 6 10a6 6 0 0 1-12 0c0-4 3-6 6-10z"/></svg>Actividad principal</dt>
+          <dd class="sm:col-span-2">Elaboración de productos de panadería (CIIU 1071)</dd></div>
+        <div class="grid gap-1 px-5 py-4 sm:grid-cols-3"><dt class="flex items-center gap-2 font-semibold text-toast">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>Inicio de actividades</dt>
+          <dd class="sm:col-span-2">3 de agosto de 2023</dd></div>
+        <div class="grid gap-1 px-5 py-4 sm:grid-cols-3"><dt class="flex items-center gap-2 font-semibold text-toast">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Estado en SUNAT</dt>
+          <dd class="sm:col-span-2"><span class="rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800">Activo · Habido</span></dd></div>
+        <div class="grid gap-1 px-5 py-4 sm:grid-cols-3"><dt class="flex items-center gap-2 font-semibold text-toast">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>Comprobantes</dt>
+          <dd class="sm:col-span-2">Factura y boleta electrónicas, desde el 22/10/2024</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISIÓN / VISIÓN / VALORES ============ -->
+<section id="mision" class="bg-crust py-20 text-flour md:py-28">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 class="font-display text-4xl font-extrabold tracking-tight md:text-5xl">Lo que nos mueve</h2>
+
+    <div role="tablist" aria-label="Misión, visión y valores" class="mt-8 inline-flex flex-wrap gap-2 rounded-full bg-white/10 p-1.5">
+      <button role="tab" id="tab-mision" aria-controls="panel-mision" aria-selected="true" class="rounded-full px-5 py-2 font-semibold">Misión</button>
+      <button role="tab" id="tab-vision" aria-controls="panel-vision" aria-selected="false" class="rounded-full px-5 py-2 font-semibold">Visión</button>
+      <button role="tab" id="tab-valores" aria-controls="panel-valores" aria-selected="false" class="rounded-full px-5 py-2 font-semibold">Valores</button>
+    </div>
+
+    <div class="mt-10 min-h-[11rem] max-w-3xl">
+      <div role="tabpanel" id="panel-mision" aria-labelledby="tab-mision">
+        <p class="font-display text-2xl font-bold leading-snug sm:text-3xl">Elaborar pan y productos de panadería frescos, ricos y de calidad, con insumos seleccionados, para llevar alegría a la mesa de las familias huanuqueñas.</p>
+      </div>
+      <div role="tabpanel" id="panel-vision" aria-labelledby="tab-vision" hidden>
+        <p class="font-display text-2xl font-bold leading-snug sm:text-3xl">Ser la panificadora preferida de Amarilis y de la región Huánuco, reconocida por su sabor, su higiene y su trato cercano.</p>
+      </div>
+      <div role="tabpanel" id="panel-valores" aria-labelledby="tab-valores" hidden>
+        <ul class="grid gap-4 sm:grid-cols-2">
+          <li class="rounded-2xl bg-white/10 p-5"><h3 class="font-display text-xl font-bold text-wheat">Frescura</h3><p class="mt-1 text-flour/80">Horneamos a diario para que el pan llegue en su mejor punto.</p></li>
+          <li class="rounded-2xl bg-white/10 p-5"><h3 class="font-display text-xl font-bold text-wheat">Calidad</h3><p class="mt-1 text-flour/80">Cuidamos cada ingrediente y cada receta.</p></li>
+          <li class="rounded-2xl bg-white/10 p-5"><h3 class="font-display text-xl font-bold text-wheat">Higiene</h3><p class="mt-1 text-flour/80">Trabajamos con limpieza y buenas prácticas de manipulación.</p></li>
+          <li class="rounded-2xl bg-white/10 p-5"><h3 class="font-display text-xl font-bold text-wheat">Cercanía</h3><p class="mt-1 text-flour/80">Somos parte del barrio y atendemos con calidez.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTOS ============ -->
+<section id="productos" class="mx-auto max-w-6xl px-5 py-20 md:py-28">
+  <div class="max-w-xl">
+    <h2 class="font-display text-4xl font-extrabold tracking-tight md:text-5xl">Qué horneamos</h2>
+    <p class="mt-4 text-lg text-crust/75">Una muestra de nuestra línea de panadería. Escríbenos para conocer la carta del día y los precios.</p>
+  </div>
+  <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <article class="rounded-3xl bg-wheat p-6">
+      <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 16c0-5 3-8 8-8s8 3 8 8c0 2-2 3-8 3s-8-1-8-3z"/><path d="M9 12l1 2M13 11l1 2"/></svg>
+      <h3 class="font-display mt-5 text-2xl font-bold">Pan de cada día</h3>
+      <p class="mt-2 text-crust/80">Pan francés, pan de molde y más, recién salido del horno.</p>
+    </article>
+    <article class="rounded-3xl bg-berry p-6 text-flour">
+      <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 20h14l-1.500-9h-11z"/><path d="M8 11c0-3 1.500-5 4-5s4 2 4 5M12 3v3"/></svg>
+      <h3 class="font-display mt-5 text-2xl font-bold">Pasteles y tortas</h3>
+      <p class="mt-2 text-flour/85">Para cumpleaños, reuniones y celebraciones especiales.</p>
+    </article>
+    <article class="rounded-3xl bg-toast p-6 text-flour">
+      <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.500"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+      <h3 class="font-display mt-5 text-2xl font-bold">Bizcochos y galletas</h3>
+      <p class="mt-2 text-flour/85">Dulces para acompañar el café o la merienda.</p>
+    </article>
+    <article class="rounded-3xl bg-white p-6 ring-1 ring-crust/10">
+      <svg class="h-10 w-10 text-berry" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="1.500"/><circle cx="17" cy="18" r="1.500"/></svg>
+      <h3 class="font-display mt-5 text-2xl font-bold">Pedidos por mayor</h3>
+      <p class="mt-2 text-crust/75">Atendemos a tiendas y negocios, con factura o boleta electrónica.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section id="galeria" class="mx-auto max-w-6xl px-5 py-20 md:py-28">
+  <div class="max-w-xl">
+    <h2 class="font-display text-4xl font-extrabold tracking-tight md:text-5xl">Vive IC · Summit 2026 Createtech</h2>
+    <p class="mt-4 text-lg text-crust/75">Momentos del evento en el Instituto Continental. Toca una foto para verla en tamaño completo.</p>
+  </div>
+  <div class="mt-12 columns-1 gap-4 sm:columns-2">
+    <figure class="mb-4 break-inside-avoid overflow-hidden rounded-3xl ring-1 ring-crust/10">
+      <a href="assets/img/foto1.jpg" target="_blank" rel="noopener" aria-label="Ver foto 1 en tamaño completo">
+        <img src="assets/img/foto1.jpg" alt="Equipo frente al banner de Vive IC Summit 2026 Createtech en el Instituto Continental" loading="lazy" decoding="async" class="block h-auto w-full transition-transform duration-500 hover:scale-[1.02]">
+      </a>
+    </figure>
+    <figure class="mb-4 break-inside-avoid overflow-hidden rounded-3xl ring-1 ring-crust/10">
+      <a href="assets/img/foto2.jpg" target="_blank" rel="noopener" aria-label="Ver foto 2 en tamaño completo">
+        <img src="assets/img/foto2.jpg" alt="Grupo con carteles del Vive IC Summit 2026 Createtech" loading="lazy" decoding="async" class="block h-auto w-full transition-transform duration-500 hover:scale-[1.02]">
+      </a>
+    </figure>
+    <figure class="mb-4 break-inside-avoid overflow-hidden rounded-3xl ring-1 ring-crust/10">
+      <a href="assets/img/foto3.jpg" target="_blank" rel="noopener" aria-label="Ver foto 3 en tamaño completo">
+        <img src="assets/img/foto3.jpg" alt="Tres asistentes frente a la entrada del Instituto Continental durante el Summit 2026 Createtech" loading="lazy" decoding="async" class="block h-auto w-full transition-transform duration-500 hover:scale-[1.02]">
+      </a>
+    </figure>
+    <figure class="mb-4 break-inside-avoid overflow-hidden rounded-3xl ring-1 ring-crust/10">
+      <a href="assets/img/foto4.jpg" target="_blank" rel="noopener" aria-label="Ver foto 4 en tamaño completo">
+        <img src="assets/img/foto4.jpg" alt="Grupo de estudiantes junto a invitados en el campus durante el evento" loading="lazy" decoding="async" class="block h-auto w-full transition-transform duration-500 hover:scale-[1.02]">
+      </a>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ UBICACIÓN ============ -->
+<section id="ubicacion" class="bg-white py-20 md:py-28">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-5">
+    <div class="lg:col-span-2">
+      <h2 class="font-display text-4xl font-extrabold tracking-tight md:text-5xl">Visítanos</h2>
+      <div class="mt-8 space-y-6">
+        <div class="flex gap-4">
+          <svg class="mt-1 h-6 w-6 shrink-0 text-berry" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11a7 7 0 0 0-14 0c0 4.800 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>
+          <div><h3 class="font-semibold">Dirección</h3>
+            <p class="text-crust/80">Jr. Libertad Nro. A-12, Centro Poblado Paucarbambilla, costado de la loza deportiva de Fonavi I.<br>Amarilis, Huánuco, Perú.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <svg class="mt-1 h-6 w-6 shrink-0 text-berry" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><h3 class="font-semibold">Horario</h3><p class="text-crust/80" data-horario></p></div>
+        </div>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Jr.+Libertad+A-12+Paucarbambilla+Amarilis+Huanuco" target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 rounded-full bg-crust px-6 py-3 font-semibold text-flour hover:bg-toast">Abrir en Google Maps</a>
+    </div>
+    <div class="overflow-hidden rounded-3xl ring-1 ring-crust/15 lg:col-span-3">
+      <iframe title="Mapa de Oh Qué Bueno en Paucarbambilla, Amarilis" class="h-80 w-full lg:h-full lg:min-h-[24rem]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Jr.+Libertad+A-12+Paucarbambilla+Amarilis+Huanuco+Peru&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="mx-auto max-w-6xl px-5 py-20 md:py-28">
+  <div class="grid gap-12 lg:grid-cols-2">
+    <div>
+      <h2 class="font-display text-4xl font-extrabold tracking-tight md:text-5xl">Hablemos de tu pedido</h2>
+      <p class="mt-4 max-w-md text-lg text-crust/75">Cuéntanos qué necesitas y te respondemos por WhatsApp.</p>
+      <ul class="mt-8 space-y-4 text-lg">
+        <li class="flex items-center gap-3"><svg class="h-6 w-6 text-berry" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a data-tel href="#" class="hover:underline"></a></li>
+        <li class="flex items-center gap-3"><svg class="h-6 w-6 text-berry" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a data-mail href="#" class="hover:underline"></a></li>
+        <li class="flex items-center gap-3"><svg class="h-6 w-6 text-berry" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11a7 7 0 0 0-14 0c0 4.800 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Amarilis, Huánuco</li>
+      </ul>
+      <div class="mt-8 flex gap-3">
+        <a data-social="facebook" href="#" aria-label="Facebook" class="grid h-11 w-11 place-items-center rounded-full bg-crust text-flour hover:bg-berry"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M14 9V7c0-1 .5-1.500 1.500-1.500H17V2h-2.500C11.500 2 10 4 10 6.500V9H7.500v3.500H10V22h4v-9.500h2.500L17 9z"/></svg></a>
+        <a data-social="instagram" href="#" aria-label="Instagram" class="grid h-11 w-11 place-items-center rounded-full bg-crust text-flour hover:bg-berry"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor"/></svg></a>
+        <a data-social="tiktok" href="#" aria-label="TikTok" class="grid h-11 w-11 place-items-center rounded-full bg-crust text-flour hover:bg-berry"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M14 3v11.500a3.500 3.500 0 1 1-3.500-3.500M14 3c.5 3 2.500 4.500 5 4.500"/></svg></a>
+      </div>
+    </div>
+
+    <form id="pedidoForm" class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-crust/10 sm:p-8">
+      <label class="block text-sm font-semibold" for="nombre">Tu nombre</label>
+      <input id="nombre" name="nombre" required autocomplete="name" class="mt-1 w-full rounded-xl border border-crust/20 bg-flour px-4 py-3 outline-none focus:border-wheat focus:ring-2 focus:ring-wheat" placeholder="Ej. María Pérez">
+      <label class="mt-5 block text-sm font-semibold" for="mensaje">¿Qué necesitas?</label>
+      <textarea id="mensaje" name="mensaje" required rows="4" class="mt-1 w-full rounded-xl border border-crust/20 bg-flour px-4 py-3 outline-none focus:border-wheat focus:ring-2 focus:ring-wheat" placeholder="Ej. Quiero una torta para el sábado"></textarea>
+      <button type="submit" class="mt-6 w-full rounded-full bg-crust px-6 py-3.5 font-semibold text-flour hover:bg-berry">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ PIE ============ -->
+<footer class="bg-crust text-flour">
+  <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-5 py-10 md:flex-row md:items-center">
+    <div>
+      <p class="font-display text-xl font-extrabold">Oh Qué Bueno</p>
+      <p class="mt-1 text-sm text-flour/65">Empresa Panificadora Oh Qué Bueno E.I.R.L. · RUC 20489689708</p>
+    </div>
+    <div class="flex flex-wrap gap-3">
+    <a data-viveic href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-berry px-5 py-2.5 text-sm font-semibold hover:bg-flour hover:text-berry">VIVE IC</a>
+    <a data-repo href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold hover:bg-white/10">
+      <svg class="h-4 w-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      Repositorio
+    </a>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs text-flour/55">© <span data-year></span> Empresa Panificadora Oh Qué Bueno E.I.R.L. Todos los derechos reservados.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
