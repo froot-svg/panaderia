@@ -1,0 +1,39 @@
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { font-family: 'Figtree', system-ui, sans-serif; }
+.font-display { font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; }
+
+#header { transition: background-color .3s, box-shadow .3s; }
+#header.is-scrolled { background: rgba(42,22,15,.92); backdrop-filter: blur(10px); box-shadow: 0 1px 0 rgba(255,255,255,.08); }
+
+/* Resplandor del horno */
+.oven-glow { background: radial-gradient(60% 60% at 50% 55%, rgba(245,184,61,.35), transparent 70%); animation: glow 4s ease-in-out infinite; }
+@keyframes glow { 50% { opacity: .65; transform: scale(1.06); } }
+
+/* Vapor del pan */
+.steam { stroke-dasharray: 80; animation: steam 3.6s ease-in-out infinite; opacity: 0; }
+.steam.s2 { animation-delay: 1.2s; } .steam.s3 { animation-delay: 2.4s; }
+@keyframes steam {
+  0% { stroke-dashoffset: 80; opacity: 0; transform: translateY(8px); }
+  30% { opacity: .8; }
+  100% { stroke-dashoffset: 0; opacity: 0; transform: translateY(-18px); }
+}
+.loaf { animation: float 6s ease-in-out infinite; transform-origin: center; }
+@keyframes float { 50% { transform: translateY(-8px) rotate(-1deg); } }
+
+/* Cinta de texto en movimiento */
+.marquee { display: flex; width: max-content; animation: marq 28s linear infinite; }
+@keyframes marq { to { transform: translateX(-50%); } }
+
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s, transform .7s; }
+.reveal.in { opacity: 1; transform: none; }
+
+[role=tab][aria-selected=true] { background: #F5B83D; color: #2A160F; }
+
+:focus-visible { outline: 3px solid #F5B83D; outline-offset: 3px; border-radius: 6px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; }
+  .steam { opacity: .5; }
+}
