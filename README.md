@@ -5,7 +5,7 @@ Sitio estático con Tailwind CSS (vía CDN). Abre `index.html` en el navegador.
 ## Qué editar
 Todo está en `assets/js/main.js`, bloque `CONFIG`:
 - `repoUrl`: link de tu repositorio de GitHub (botón "Repositorio").
-- `viveIcUrl`: link del botón VIVE IC.
+- `viveIcUrl`: botón VIVE IC. Con `"#galeria"` baja a las fotos; con un link `https://...` abre esa página.
 - `whatsapp`, `telefono`, `correo`, `horario`, redes sociales.
 
 Los textos de Misión, Visión y Valores están en `index.html` (sección `#mision`); son una propuesta, cámbialos por los reales.
