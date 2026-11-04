@@ -2,15 +2,13 @@
    CONFIGURACIÓN: edita solo esta parte
    ========================================================= */
 const CONFIG = {
-  repoUrl: "https://github.com/TU-USUARIO/TU-REPOSITORIO", // <- pon aquí el link de tu repositorio
+  repoUrl: "https://github.com/froot-svg/sistema-panaderia/tree/main/sistema_panaderia_completo", // <- botón "Repositorio"
   viveIcUrl: "#galeria",              // <- botón VIVE IC: "#galeria" baja a las fotos; o pon un link https://... para abrir otra página
-  whatsapp: "51999999999",            // <- número con código de país (51 = Perú), sin + ni espacios
-  telefono: "+51 999 999 999",        // <- teléfono que se muestra en la web
-  correo: "contacto@ejemplo.com",     // <- tu correo
-  horario: "Lunes a domingo · 6:00 a. m. – 9:00 p. m.", // <- ajusta tu horario real
-  facebook: "#",
-  instagram: "#",
-  tiktok: "#"
+  whatsapp: "51931164145",            // <- WhatsApp principal con código de país (51 = Perú), sin + ni espacios. Lo usan "Hacer un pedido" y el formulario
+  telefonos: ["931 164 145", "917 572 542"], // <- teléfonos que se muestran en la web (cada uno es un link para llamar)
+  correo: "contacto@ohquebueno.pe",   // <- correo de contacto (de ejemplo: cámbialo cuando tengas uno real)
+  horario: "Lunes a domingo · 6:00 a. m. – 1:00 p. m. y 3:00 p. m. – 9:00 p. m.",
+  facebook: "https://www.facebook.com/ohquebuenohuanuco/"
 };
 
 /* ---------- Aplicar configuración ---------- */
@@ -19,7 +17,17 @@ document.querySelectorAll("[data-viveic]").forEach(a => {
   a.href = CONFIG.viveIcUrl;
   if (CONFIG.viveIcUrl.startsWith("#")) { a.removeAttribute("target"); a.removeAttribute("rel"); }
 });
-document.querySelectorAll("[data-tel]").forEach(a => { a.href = "tel:" + CONFIG.telefono.replace(/\s/g, ""); a.textContent = CONFIG.telefono; });
+document.querySelectorAll("[data-tel]").forEach(el => {
+  el.replaceChildren();
+  CONFIG.telefonos.forEach((t, i) => {
+    if (i > 0) el.append(" / ");
+    const a = document.createElement("a");
+    a.href = "tel:+51" + t.replace(/\s/g, "");
+    a.textContent = t;
+    a.className = "hover:underline";
+    el.append(a);
+  });
+});
 document.querySelectorAll("[data-mail]").forEach(a => { a.href = "mailto:" + CONFIG.correo; a.textContent = CONFIG.correo; });
 document.querySelectorAll("[data-wa]").forEach(a => a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent("Hola, quisiera hacer un pedido en Oh Qué Bueno."));
 document.querySelectorAll("[data-horario]").forEach(el => el.textContent = CONFIG.horario);
